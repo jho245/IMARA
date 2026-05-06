@@ -1,17 +1,20 @@
-# Projektdokumentation: Webseite für Reinigungsfirma
+# Projektdokumentation: IMARA Elite Property Care
 
 ## 1. Projektübersicht
 
-**Projekt:** Webpräsenz für kleine Reinigungsfirma
+**Projekt:** Webpräsenz für IMARA Elite Property Care
+**Unternehmen:** IMARA Elite Property Care, gegründet 2024 von Imane Samini
+**Standort:** Düsseldorf (Karl-Anton-Str. 17, 40211 Düsseldorf)
+**Domain:** [www.imara-epc.de](https://www.imara-epc.de)
 **Ziel:** Professionelle, benutzerfreundliche Website zur Kundengewinnung und Information
-**Zielgruppe:** Geschäftskunden und Privathaushalte in der Region
+**Zielgruppe:** Geschäftskunden (Büros, Praxen, Gewerbe) und Privathaushalte in Düsseldorf
 
 ---
 
 ## 2. Datei- und Ordnerstruktur
 
 ```
-cleaning-website/
+IMARA_EPC/
 ├── index.html                 # Startseite
 ├── about.html                 # Über uns
 ├── services.html              # Leistungen/Services
@@ -20,6 +23,7 @@ cleaning-website/
 ├── impressum.html             # Impressum
 ├── datenschutz.html           # Datenschutzerklärung
 ├── 404.html                   # Fehlerseite
+├── README.md                  # Projekt-README
 │
 ├── assets/
 │   ├── css/
@@ -28,58 +32,73 @@ cleaning-website/
 │   │   └── variables.css      # CSS-Variablen (Farben, Fonts)
 │   │
 │   ├── js/
-│   │   ├── main.js            # Hauptskripte
+│   │   ├── main.js            # Hauptskripte (Navigation, allg. Interaktion)
 │   │   ├── form-handler.js    # Kontaktformular-Verarbeitung
-│   │   └── performance.js     # Performance-Optimierungen
+│   │   ├── performance.js     # Performance-Optimierungen
+│   │   └── services-modal.js  # Modal-Overlay für Leistungsdetails
 │   │
 │   ├── images/
-│   │   ├── logo.svg           # Logo (SVG für Skalierbarkeit)
-│   │   ├── hero/              # Hero-Bilder (optimiert)
-│   │   ├── services/          # Service-Fotos
-│   │   ├── team/              # Teamfotos
-│   │   └── icons/             # SVG-Icons
+│   │   ├── flyer/
+│   │   │   └── flyer_imara.jpeg    # Unternehmensflyer
+│   │   ├── icons/
+│   │   │   └── favicon.ico         # Favicon
+│   │   ├── logo/
+│   │   │   ├── logo_imara.png      # Logo (groß)
+│   │   │   └── logo_imara_small.png # Logo (klein, für Navigation)
+│   │   └── pictures/
+│   │       ├── bild_1.jpg          # Hero-Bild Startseite
+│   │       ├── bild_2.jpg          # Bild Über-uns-Seite
+│   │       ├── bild_3.jpg          # Weiteres Bild
+│   │       └── contact.jpg         # Bild Kontaktseite
 │   │
-│   └── fonts/
-│       ├── font-family-regular.woff2
-│       └── font-family-bold.woff2
+│   └── texts/
+│       ├── contactdata.md     # Kontaktdaten (Referenz)
+│       ├── services.md        # Leistungsbeschreibungen (Referenz)
+│       └── startpage.md       # Startseitentexte (Referenz)
 │
 ├── config/
 │   ├── sitemap.xml            # XML-Sitemap für SEO
 │   ├── robots.txt             # Robots.txt für Crawler
-│   └── .htaccess              # Apache-Konfiguration (falls Apache)
+│   └── .htaccess              # Apache-Konfiguration
 │
-├── docs/
-│   ├── STYLE_GUIDE.md         # Design-Richtlinien
-│   ├── SEO_CHECKLIST.md       # SEO-Optimierungen
-│   └── MAINTENANCE.md         # Wartungshandbuch
-│
-└── README.md                  # Projekt-README
-
+└── docs/
+    ├── STYLE_GUIDE.md         # Design-Richtlinien
+    ├── SEO_CHECKLIST.md       # SEO-Optimierungen
+    └── MAINTENANCE.md         # Wartungshandbuch
 ```
 
 ---
 
-## 3. Seiten-Komponenten (Essentiell)
+## 3. Seiten-Komponenten
 
 ### 3.1 Startseite (index.html)
-**Zweck:** Erste Eindruck, Überblick über das Unternehmen
+**Zweck:** Erster Eindruck, Überblick über das Unternehmen
 
 **Inhalte:**
-- Hero-Section mit ansprechendem Bild und Willkommenstext
-- Kurze Unternehmensvorstellung (2-3 Sätze)
-- Übersicht der Top-Services (3-4 Karten)
-- Call-to-Action Button ("Angebot anfordern", "Kontaktieren Sie uns")
-- Kurze Referenzen/Kundenzahl (Vertrauensaufbau)
-- Newsletter-Anmeldung (optional)
+- Hero-Section mit Bild (bild_1.jpg) und Willkommenstext
+- Intro-Absatz: Kurze Unternehmensvorstellung
+- Übersicht der Top-Services (4 Karten)
+- Trust-Section: Vertrauensmerkmale (USPs)
+- Call-to-Action: Links zu Kontakt und Preisliste
 
-**Struktur:**
+**Seitenstruktur:**
 ```html
-<header> <!-- Navigation, Logo -->
-<section class="hero"> <!-- Willkommen -->
-<section class="services-overview"> <!-- Services -->
-<section class="cta"> <!-- Call-to-Action -->
-<footer> <!-- Footer mit Links -->
+<header>                        <!-- Navigation, Logo -->
+<section class="hero layout-split">     <!-- Willkommen + Bild -->
+<section class="intro">                 <!-- Kurzbeschreibung -->
+<section class="services-overview">     <!-- 4 Service-Karten -->
+<section class="trust">                 <!-- Vertrauenspunkte -->
+<section class="cta">                   <!-- Call-to-Action -->
+<footer>                        <!-- Footer mit Links -->
 ```
+
+**Service-Karten auf Startseite:**
+1. Zuhause – Haushaltsreinigung
+2. Arbeitsplatz – Büroreinigung
+3. Fenster – Fensterreinigung
+4. Sonderaufgaben – Spezialreinigung
+
+**Schema Markup:** `LocalBusiness` (JSON-LD) mit Adresse, Telefon, Öffnungszeiten, Geo-Koordinaten
 
 ---
 
@@ -87,51 +106,51 @@ cleaning-website/
 **Zweck:** Vertrauensaufbau durch Unternehmensgeschichte und -werte
 
 **Inhalte:**
-- Unternehmensgeschichte (Gründung, Entwicklung)
-- Unternehmenswerte und Mission
-- Teamporträt mit Fotos
-- Erfahrung und Qualifikationen
-- Zertifizierungen (falls vorhanden)
-- Warum wir? (Alleinstellungsmerkmale)
+- Unternehmensgeschichte (Gründung 2024, Imane Samini)
+- Unternehmenswerte (Zuverlässigkeit, Qualität, Respekt, Nachhaltigkeit, persönlicher Kontakt)
+- Warum-wir-Section (Alleinstellungsmerkmale)
+- Dienstleistungsübersicht (Liste aller 10 Leistungen)
+- Zitat von Imane Samini (CEO-Quote)
 
-**Struktur:**
+**Seitenstruktur:**
 ```html
-<section class="company-story">
-<section class="values">
-<section class="team">
-<section class="certifications">
-<section class="why-us">
+<section class="company-story">    <!-- Geschichte + schwebendes Bild rechts -->
+<section class="values">           <!-- Unternehmenswerte -->
+<section class="why-us">           <!-- Alleinstellungsmerkmale -->
+<section class="services-overview"><!-- Leistungsliste -->
+<section class="quote">            <!-- Zitat der Gründerin -->
 ```
+
+**Hinweis:** Kein Team-Bereich mit Fotos, keine Zertifizierungs-Section. Bild (bild_2.jpg) wird per CSS-float rechts im company-story-Bereich eingebunden.
 
 ---
 
-### 3.3 Services/Leistungen (services.html)
-**Zweck:** Detaillierte Beschreibung aller angebotenen Services
+### 3.3 Leistungen (services.html)
+**Zweck:** Detaillierte Beschreibung aller 10 angebotenen Services
 
 **Inhalte:**
-- Übersicht aller Service-Kategorien
-- Einzelne Service-Karten mit:
-  - Icon/Bild
-  - Servicename
-  - Kurzbeschreibung
-  - Detaillierte Leistungen (Aufzählung)
-  - "Mehr erfahren"-Link
-  - Ggf. Beispielbilder (Vorher-Nachher)
+- Intro-Text
+- 10 Service-Karten im Grid, je mit Titel und Modal-Beschreibung
+- Modal-Overlay: Klick auf Karte öffnet Detailbeschreibung (services-modal.js)
 
-**Service-Beispiele:**
-- Büroreinigung
-- Privathaushalt-Reinigung
-- Fensterreinigung
-- Spezialreinigungen
-- Regelmäßige Wartungsreinigung
+**Die 10 Leistungen:**
+1. **Gewerbereinigung** – Verkaufsflächen, Lager, Kundenbereiche
+2. **Praxisreinigung** – Medizinische Einrichtungen, Desinfektion
+3. **Büroreinigung** – Arbeitsplätze, täglich oder wöchentlich
+4. **Grundreinigung** – Intensivreinigung, hartnäckige Verschmutzungen
+5. **Leerstandreinigung** – Übergabereinigung für Immobilien
+6. **Haushaltsreinigung** – Private Wohnräume nach individuellen Wünschen
+7. **Aufenthaltsreinigung** – Kantinen, Pausenräume, Umkleiden
+8. **Events-Reinigung** – Vor/nach Veranstaltungen
+9. **Sonderreinigung** – Spezialaufgaben mit speziellem Gerät
+10. **Objektbetreuung** – Gebäudemanagement, Haustechnik-Kontrolle
 
-**Struktur:**
+**Seitenstruktur:**
 ```html
-<section class="services-grid">
-  <div class="service-card">
-    <!-- Service Details -->
-  </div>
-</section>
+<h1>Unsere Leistungen</h1>
+<p>                              <!-- Intro -->
+<section class="services-grid"> <!-- 10 service-card Divs mit data-Attributen -->
+<div id="service-modal">        <!-- Modal-Overlay -->
 ```
 
 ---
@@ -141,56 +160,34 @@ cleaning-website/
 
 **Inhalte:**
 - Preismodelle nach Service-Typ
-- Tabellarische Darstellung:
-  - Service-Typ
-  - Leistungsumfang
-  - Preis (ab...)
-  - "Anfrage senden"-Button
-- Optional: Preisrechner/Kalkulator
-- Rabatte für regelmäßige Buchungen
-- Hinweis: "Individuelle Angebote auf Anfrage"
-
-**Struktur:**
-```html
-<section class="pricing-intro">
-<section class="pricing-table">
-<section class="pricing-calculator"> <!-- Optional -->
-<section class="faq-pricing">
-```
+- Hinweis auf individuelle Angebote auf Anfrage
+- Verlinkung zum Kontaktformular
 
 ---
 
 ### 3.5 Kontakt (contact.html)
 **Zweck:** Direkte Kommunikation mit dem Unternehmen
 
-**Inhalte:**
-- Kontaktformular mit Feldern:
-  - Name (erforderlich)
-  - E-Mail (erforderlich, validiert)
-  - Telefon (optional)
-  - Service-Auswahl (Dropdown)
-  - Nachricht (Text-Area)
-  - Datenschutz-Zustimmung (erforderlich)
-  - Spam-Schutz (Honeypot oder reCAPTCHA)
+**Kontaktdaten:**
+- Telefon: +49 176 70902249
+- E-Mail: info@imara-epc.de
+- Adresse: Karl-Anton-Str. 17, 40211 Düsseldorf
+- Öffnungszeiten: Mo–Fr, 08:00–18:00 Uhr
 
-- Kontaktinformationen:
-  - Firmenname und Adresse
-  - Telefonnummer(n)
-  - E-Mail-Adresse
-  - Öffnungszeiten
-  - Ggf. Google Maps Embedded
+**Kontaktformular-Felder:**
+- Name (erforderlich)
+- E-Mail (erforderlich, validiert)
+- Telefon (optional)
+- Service-Auswahl (Dropdown)
+- Nachricht (Textarea)
+- Datenschutz-Zustimmung (erforderlich)
+- Spam-Schutz (Honeypot oder reCAPTCHA)
 
-- Kontaktformular-Verarbeitung:
-  - Validierung auf Client-Seite
-  - Versand per E-Mail oder zu Datenbank
-  - Bestätigungsnachricht an Nutzer
-  - Automatische Bestätigung an Firmenemail
-
-**Struktur:**
+**Seitenstruktur:**
 ```html
 <section class="contact-form">
 <section class="contact-info">
-<section class="map">
+<section class="map">           <!-- Optional: Google Maps Embed -->
 ```
 
 ---
@@ -199,13 +196,10 @@ cleaning-website/
 **Zweck:** Rechtliche Anforderung (§ 5 TMG)
 
 **Erforderliche Inhalte:**
-- Vollständiger Name des Unternehmens
-- Anschrift (Geschäftsadresse)
+- Vollständiger Name: IMARA Elite Property Care / Imane Samini
+- Adresse: Karl-Anton-Str. 17, 40211 Düsseldorf
 - Telefon und E-Mail
-- Vertreter (Geschäftsführer, Inhaber)
-- Registernummer (Falls eingetragen: HRB, HRA)
 - Steuernummer / USt-ID
-- Aufsichtsbehörde (falls relevant)
 - Haftungsausschluss
 
 ---
@@ -214,17 +208,14 @@ cleaning-website/
 **Zweck:** DSGVO-Compliance
 
 **Erforderliche Abschnitte:**
-- Verantwortlicher
+- Verantwortlicher (IMARA Elite Property Care)
 - Zweck der Datenverarbeitung
 - Rechtsgrundlage
 - Speicherdauer
 - Betroffenenrechte
-- Kontaktdaten des Datenschutzbeauftragten (falls erforderlich)
-- Cookies und externe Services (Google Analytics, Maps, etc.)
-- Verwendung von Kontaktformularen
+- Cookies und externe Services
+- Verwendung des Kontaktformulars (form-handler.js)
 - SSL/TLS-Verschlüsselung
-
-**Hinweis:** Juristisch korrekte Vorlage verwenden oder Anwalt konsultieren
 
 ---
 
@@ -233,96 +224,75 @@ cleaning-website/
 ### 4.1 Performance-Optimierung
 
 **Bilder:**
-- Moderne Formate (WebP mit PNG-Fallback)
-- Responsive Bildgrößen (srcset)
-- Lazy Loading für unterhalb der Fold
-- Kompression (z.B. TinyPNG, ImageOptim)
-- Max. 100KB pro Bild (auf Hero-Bildern optimieren)
+- Formate: JPEG und PNG (vorhanden), WebP als Ziel
+- Responsive Bildgrößen (srcset) empfohlen
+- Lazy Loading für unterhalb der Falz
+- Max. 100 KB pro Bild
 
 **CSS & JavaScript:**
-- CSS minimieren und zusammenfassen
-- JavaScript asynchron laden (async/defer)
-- Kritisches CSS inline laden
-- Font-Subsetting (nur benötigte Zeichen laden)
-- Moderne Formate (WOFF2 statt TTF)
+- CSS aufgeteilt in variables.css, style.css, responsive.css
+- JavaScript asynchron (defer) geladen
+- Kein externer Framework-Overhead – Vanilla JS
 
 **Caching:**
-- Browser-Caching aktivieren (via .htaccess)
-- Server-Caching konfigurieren
-- CDN nutzen (z.B. Cloudflare kostenlos)
+- Browser-Caching via .htaccess aktiviert
+- CDN-Einsatz empfohlen (z. B. Cloudflare)
 
 **Ziel:** Lighthouse Score > 90 (Performance, SEO, Best Practices, Accessibility)
 
 ### 4.2 Mobile-Responsiveness
 
-**Breakpoints:**
-- Mobile: 320px - 768px
-- Tablet: 768px - 1024px
+**Breakpoints (responsive.css):**
+- Mobile: 320px – 768px
+- Tablet: 768px – 1024px
 - Desktop: 1024px+
 
 **Anforderungen:**
-- Mobiles Menü (Hamburger-Menü)
+- Hamburger-Menü (nav-toggle, main.js)
 - Touch-freundliche Buttons (min. 48px)
-- Lesbare Schriftgrößen auf mobil
-- Optimierte Bilder für kleinere Screens
+- Lesbare Schriftgrößen auf Mobilgeräten
 - Keine horizontalen Scrollbars
-
-**Testing:** Chrome DevTools, BrowserStack, oder echte Geräte
 
 ### 4.3 SEO-Optimierung
 
 **On-Page:**
-- Meta-Descriptions (155-160 Zeichen)
-- Title-Tags (50-60 Zeichen, Keyword + Brand)
-- H1-H6 Struktur (eine H1 pro Seite)
-- Keyword-Recherche (z.B. "Reinigung Konstanz")
-- Interne Verlinkung
-- Schema Markup (LocalBusiness, Service)
-
-**Off-Page:**
-- Google My Business Eintrag
-- Local Citations (Branchenverzeichnisse)
-- Backlinks von lokalen Seiten
+- Meta-Descriptions (155–160 Zeichen) auf allen Seiten
+- Title-Tags (50–60 Zeichen, Keyword + Brand)
+- H1–H6 Struktur (eine H1 pro Seite)
+- Keywords: "Gebäudereinigung Düsseldorf", "Büroreinigung Düsseldorf", etc.
+- Canonical URLs auf jeder Seite
+- Schema Markup: `LocalBusiness` (JSON-LD, index.html)
 
 **Technisch:**
-- Sitemap.xml
-- robots.txt
+- sitemap.xml (config/)
+- robots.txt (config/)
 - SSL-Zertifikat (HTTPS)
-- Canonical URLs
-- Strukturierte Daten (JSON-LD)
+- favicon.ico vorhanden
 
 ### 4.4 Sicherheit
 
-**HTTPS:**
-- SSL-Zertifikat erforderlich (kostenlos via Let's Encrypt)
-- HTTP → HTTPS Redirect
+**HTTPS:** SSL-Zertifikat erforderlich (kostenlos via Let's Encrypt), HTTP → HTTPS Redirect via .htaccess
 
 **Formulare:**
-- CSRF-Token
 - Honeypot-Feld gegen Spam
-- Oder: reCAPTCHA v3 (unauffällig)
-- Rate-Limiting (max. 5 Anfragen/IP/Stunde)
-- Eingabe-Validierung (Server-Seite!)
+- Eingabe-Validierung (Client- und Server-Seite)
+- Rate-Limiting empfohlen
 
 **Datenschutz:**
-- Datenschutzerklärung aktuell
-- Cookie-Consent-Banner
+- Datenschutzerklärung vorhanden (datenschutz.html)
+- Cookie-Consent-Banner prüfen
 - DSGVO-konforme Datenspeicherung
-- Keine sensiblen Daten in URLs
 
 ### 4.5 Accessibility (A11y)
 
 **Anforderungen (WCAG 2.1 Level AA):**
 - Alt-Texte für alle Bilder
-- Semantisches HTML (header, nav, main, footer)
+- Semantisches HTML (`header`, `nav`, `main`, `footer`, `section`)
+- Hamburger-Menü mit aria-label und aria-expanded
+- Formular-Labels mit input-Elementen verknüpft
 - Ausreichender Farbkontrast (4.5:1 für Text)
-- Keyboard-Navigation möglich
+- Keyboard-Navigation möglich (inkl. Modal)
 - Focus-Indikatoren sichtbar
-- Formular-Label mit input-Elementen verknüpft
-- Video-Untertitel (falls vorhanden)
-- Lesbare Schriftgröße (min. 16px auf Mobile)
-
-**Testing:** WAVE, Axe DevTools, Lighthouse
 
 ---
 
@@ -330,107 +300,99 @@ cleaning-website/
 
 ### 5.1 Hosting-Anforderungen
 
-**Minimalanforderungen:**
-- PHP 7.4+ (für Formularverarbeitung)
-- 2 GB Speicher
-- 10 GB Bandbreite/Monat (reicht für kleine Seite)
-- E-Mail-Versand möglich
-
-**Empfehlung:** Shared Hosting (z.B. Uberspace, 1&1, Hetzner) ab ~5€/Monat
+- PHP 7.4+ (für Formularverarbeitung via form-handler.js/PHP)
+- SSL-Zertifikat aktiv
+- E-Mail-Versand konfiguriert (info@imara-epc.de)
 
 ### 5.2 Domain & SSL
 
-- Domain registrieren (.de empfohlen)
-- SSL-Zertifikat (kostenlos via Let's Encrypt)
-- E-Mail-Adressen mit eigenem Domain-Namen (info@firmenname.de)
+- Domain: **imara-epc.de** (.de)
+- SSL: Let's Encrypt (kostenlos)
+- E-Mail: info@imara-epc.de
 
 ### 5.3 Deployment-Prozess
 
 ```bash
 # 1. Lokale Entwicklung
 git clone <repo>
-cd cleaning-website
-# Testen mit lokalem Server
+cd IMARA_EPC
+# Testen mit lokalem Server (z.B. Live Server in VS Code)
 
-# 2. Build & Optimierung
-minify CSS & JS
-optimize images
-generate sitemap
+# 2. Optimierung
+# CSS/JS minimieren
+# Bilder komprimieren (TinyPNG, ImageOptim)
+# sitemap.xml aktualisieren
 
 # 3. Upload zum Server
-scp -r assets/* user@host:/public_html/
-# oder FTP/SFTP
+# FTP/SFTP oder scp
+scp -r . user@host:/public_html/
 
 # 4. Testing auf Live-Server
-Performance-Test
-SEO-Test
-Formulare testen
+# Performance-Test (Lighthouse)
+# SEO-Test
+# Formulare testen
+# Mobile-Test
 ```
 
 ---
 
-## 6. Workflow & Checklisten
+## 6. Checklisten
 
 ### 6.1 Vor dem Launch
 
 - [ ] Alle Seiten sind responsive getestet
 - [ ] Lighthouse Score > 90
 - [ ] SSL-Zertifikat aktiv
-- [ ] Sitemap.xml und robots.txt hochgeladen
+- [ ] sitemap.xml und robots.txt hochgeladen
 - [ ] Google My Business erstellt
-- [ ] Datenschutzerklärung und Impressum korrekt
-- [ ] Kontaktformular getestet
-- [ ] Alle Links funktionieren (intern & extern)
-- [ ] 404-Seite existiert
-- [ ] Google Analytics/Matomo eingebunden (optional)
+- [ ] Datenschutzerklärung und Impressum korrekt und vollständig
+- [ ] Kontaktformular getestet (inkl. E-Mail-Versand)
+- [ ] Alle internen und externen Links funktionieren
+- [ ] 404-Seite vorhanden
+- [ ] Modal auf services.html getestet (alle 10 Karten)
 - [ ] Backup erstellt
 
 ### 6.2 Nach dem Launch
 
 - [ ] Bei Google Search Console anmelden
 - [ ] Sitemap einreichen
-- [ ] In Google My Business validieren
-- [ ] In lokalen Branchenverzeichnissen eintragen
+- [ ] Google My Business validieren
+- [ ] In lokalen Branchenverzeichnissen eintragen (Düsseldorf)
 - [ ] Erste Rankings beobachten
 - [ ] Nutzerfeedback sammeln
 - [ ] Regelmäßige Backups einplanen
 
 ---
 
-## 7. Technologie-Stack (Empfehlung)
+## 7. Technologie-Stack
 
 **Frontend:**
 - HTML5 (semantisch)
-- CSS3 (flexbox, grid, responsive)
-- Vanilla JavaScript (oder leichte Frameworks)
+- CSS3 (Flexbox, Grid, responsive – aufgeteilt in 3 Dateien)
+- Vanilla JavaScript (keine externen Frameworks)
 
-**Optional (für Komplexität):**
-- Static Site Generator (Hugo, 11ty) – für bessere Performance
-- React/Vue – falls viel Interaktivität
-- Tailwind CSS – schnellere Styling
+**JavaScript-Module:**
+- `main.js` – Navigation (Hamburger-Menü), allgemeine Interaktion
+- `form-handler.js` – Kontaktformular-Validierung und -Versand
+- `performance.js` – Lazy Loading, Performance-Optimierungen
+- `services-modal.js` – Modal-Overlay für Leistungsdetails (services.html)
 
 **Backend (Kontaktformular):**
-- PHP (einfach, überall verfügbar)
-- Node.js/Express (moderner)
-- Python/Flask (flexibel)
+- PHP (serverseitige Verarbeitung, E-Mail-Versand)
 
-**CMS (Alternative zu reinem Code):**
-- WordPress (größer, aber komplexer)
-- Statamic (leicht, sicher)
-- Craft CMS (professionell)
+**Kein CMS, kein Framework** – statische HTML-Seiten für maximale Performance und einfache Wartung.
 
 ---
 
 ## 8. Kosten-Übersicht
 
 | Position | Kosten | Hinweise |
-|----------|--------|----------|
-| Domain (.de) | 5-15€/Jahr | ca. 1€/Monat |
-| Hosting (Shared) | 5-20€/Monat | ausreichend für kleine Seite |
+|---|---|---|
+| Domain (imara-epc.de) | 5–15 €/Jahr | ca. 1 €/Monat |
+| Hosting (Shared) | 5–20 €/Monat | ausreichend für statische Seite |
 | SSL-Zertifikat | kostenlos | Let's Encrypt |
-| Email (domain.de) | inklusive | meist im Hosting enthalten |
-| Design & Entwicklung | 800-3000€ | Freelancer/Agentur oder selbst |
-| **Gesamt (Start)** | **ca. 100-200€/Jahr** | ohne Entwicklung |
+| E-Mail (info@imara-epc.de) | inklusive | meist im Hosting enthalten |
+| **Gesamt (laufend)** | **ca. 80–260 €/Jahr** | ohne Entwicklungskosten |
 
 ---
 
@@ -438,46 +400,35 @@ Formulare testen
 
 **Regelmäßig (monatlich):**
 - Backups überprüfen
-- Security-Updates einspielen
-- Inhalte aktualisieren (Blog, News)
+- Inhalte aktualisieren (Preise, Leistungen)
+- Kontaktformular testen
 
 **Halbjährlich:**
-- SEO-Performance überprüfen
-- Broken Links checken
+- SEO-Performance überprüfen (Google Search Console)
+- Broken Links prüfen
 - Performance-Audit (Lighthouse)
-- Google Analytics auswerten
 
 **Jährlich:**
-- Datenschutzerklärung überprüfen
+- Datenschutzerklärung überprüfen (DSGVO-Änderungen)
 - Impressum aktualisieren
-- Komplettes Website-Backup
-- Security-Audit
+- Vollständiges Website-Backup
+- Security-Audit (.htaccess, PHP)
 
 ---
 
-## 10. Kontakt & Support
-
-**Bei Fragen zur Implementierung:**
-- Dokumentation lokales Backup speichern
-- Version Control (Git) nutzen
-- Changelog pflegen
-- Kontakt zum Support/Developer halten
-
----
-
-## 11. Zusammenfassung Timeline
+## 10. Zusammenfassung Timeline
 
 | Phase | Dauer | Aufgaben |
-|-------|-------|----------|
-| Planung | 1-2 Wochen | Content sammeln, Design-Vorlage wählen |
-| Entwicklung | 2-4 Wochen | HTML/CSS/JS schreiben, testen |
-| QA & Testing | 1 Woche | Performance, Mobile, SEO, Accessibility |
+|---|---|---|
+| Planung | 1–2 Wochen | Inhalte sammeln, Design festlegen |
+| Entwicklung | 2–4 Wochen | HTML/CSS/JS, alle 8 Seiten |
+| QA & Testing | 1 Woche | Performance, Mobile, SEO, Accessibility, Modal |
 | Launch-Vorbereitung | 1 Woche | Hosting, Domain, SSL, Datenschutz |
 | Launch | 1 Tag | Deploy, Google Indexing starten |
-| **Gesamt** | **6-9 Wochen** | Mit guter Planung machbar |
+| **Gesamt** | **5–8 Wochen** | – |
 
 ---
 
-**Version:** 1.0
-**Datum:** 2026
+**Version:** 1.1
+**Datum:** 2026-05-06
 **Status:** Aktiv
