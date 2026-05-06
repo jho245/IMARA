@@ -70,9 +70,9 @@ python3 -m http.server 8000
 
 ## Vor dem Launch
 
-- [ ] Echte Domain in `config/sitemap.xml`, `config/robots.txt` und allen `<link rel="canonical">` eintragen
+- [x] Echte Domain in `config/sitemap.xml`, `config/robots.txt` und allen `<link rel="canonical">` eintragen
 - [ ] SSL-Zertifikat bei Hostinger aktivieren
 - [ ] Dateien per FTP/SFTP hochladen
 - [ ] Google Search Console einrichten & Sitemap einreichen
 - [ ] Google My Business Eintrag erstellen
-- [ ] Steuernummer im Impressum prüfen (aktuell: 133/5838/6163)
+- [x] Steuernummer im Impressum prüfen (aktuell: 133/5838/6163)
