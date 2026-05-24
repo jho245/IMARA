@@ -66,6 +66,13 @@
     margin: 0 0 var(--spacing-lg) 0 !important;
   }
 
+  .pricing-float-img {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 var(--spacing-lg) 0;
+  }
+
   /* Service-Grid: 1 Spalte */
   .services-grid {
     grid-template-columns: 1fr;
