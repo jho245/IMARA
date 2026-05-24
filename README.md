@@ -4,16 +4,16 @@ Statische HTML/CSS/JS-Website für die Reinigungsfirma IMARA Elite Property Care
 
 ## Seiten
 
-| Datei | Inhalt |
-|-------|--------|
-| `index.html` | Startseite – Hero, Leistungsüberblick, Vertrauenssignale, CTA |
-| `about.html` | Über uns – Geschichte, Werte, Dienstleistungen, Zitat |
-| `services.html` | Leistungen – 10 klickbare Service-Karten mit Popup-Beschreibungen |
-| `pricing.html` | Preise – Hinweis auf individuelle Angebote |
-| `contact.html` | Kontakt – Adresse, Telefon, E-Mail, Bild |
-| `impressum.html` | Impressum gemäß § 5 TMG |
-| `datenschutz.html` | Datenschutzerklärung gemäß DSGVO |
-| `404.html` | Fehlerseite |
+| Datei              | Inhalt                                                            |
+| ------------------ | ----------------------------------------------------------------- |
+| `index.html`       | Startseite – Hero, Leistungsüberblick, Vertrauenssignale, CTA     |
+| `about.html`       | Über uns – Geschichte, Werte, Dienstleistungen, Zitat             |
+| `services.html`    | Leistungen – 10 klickbare Service-Karten mit Popup-Beschreibungen |
+| `pricing.html`     | Preise – Hinweis auf individuelle Angebote                        |
+| `contact.html`     | Kontakt – Adresse, Telefon, E-Mail, Bild                          |
+| `impressum.html`   | Impressum gemäß § 5 TMG                                           |
+| `datenschutz.html` | Datenschutzerklärung gemäß DSGVO                                  |
+| `404.html`         | Fehlerseite                                                       |
 
 ## Projektstruktur
 
@@ -71,8 +71,8 @@ python3 -m http.server 8000
 ## Vor dem Launch
 
 - [x] Echte Domain in `config/sitemap.xml`, `config/robots.txt` und allen `<link rel="canonical">` eintragen
-- [ ] SSL-Zertifikat bei Hostinger aktivieren
-- [ ] Dateien per FTP/SFTP hochladen
+- [x] SSL-Zertifikat bei Hostinger aktivieren
+- [x] Dateien per FTP/SFTP hochladen
 - [ ] Google Search Console einrichten & Sitemap einreichen
 - [ ] Google My Business Eintrag erstellen
 - [x] Steuernummer im Impressum prüfen (aktuell: 133/5838/6163)
