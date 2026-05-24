@@ -10,8 +10,8 @@
   --color-border: #dddddd;
 
   /* Typografie */
-  --font-family-base: 'font-family-regular', Arial, sans-serif;
-  --font-family-bold: 'font-family-bold', Arial, sans-serif;
+  --font-family-base: Arial, Helvetica, sans-serif;
+  --font-family-bold: Arial, Helvetica, sans-serif;
   --font-size-base: 16px;
   --font-size-sm: 0.875rem;
   --font-size-lg: 1.25rem;

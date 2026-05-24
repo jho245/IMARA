@@ -29,12 +29,11 @@ IMARA_EPC/
 │   ├── css/
 │   │   ├── style.css          # Hauptstyles
 │   │   ├── responsive.css     # Mobile-Responsive Styles
-│   │   └── variables.css      # CSS-Variablen (Farben, Fonts)
+│   │   └── variables.css      # CSS-Variablen (Farben, Systemschriften)
 │   │
 │   ├── js/
 │   │   ├── main.js            # Hauptskripte (Navigation, allg. Interaktion)
 │   │   ├── form-handler.js    # Kontaktformular-Verarbeitung
-│   │   ├── performance.js     # Performance-Optimierungen
 │   │   └── services-modal.js  # Modal-Overlay für Leistungsdetails
 │   │
 │   ├── images/
@@ -374,7 +373,6 @@ scp -r . user@host:/public_html/
 **JavaScript-Module:**
 - `main.js` – Navigation (Hamburger-Menü), allgemeine Interaktion
 - `form-handler.js` – Kontaktformular-Validierung und -Versand
-- `performance.js` – Lazy Loading, Performance-Optimierungen
 - `services-modal.js` – Modal-Overlay für Leistungsdetails (services.html)
 
 **Backend (Kontaktformular):**

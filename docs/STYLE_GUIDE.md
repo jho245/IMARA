@@ -23,8 +23,7 @@ Alle Farben sind als CSS-Variablen in `assets/css/variables.css` definiert.
 
 ## Typografie
 
-- **Schriftart:** font-family-regular / font-family-bold (WOFF2, `assets/fonts/`)
-- **Fallback:** Arial, sans-serif
+- **Schriftart:** Arial, Helvetica, sans-serif
 - **Basisgröße:** 16px
 - **Zeilenhöhe:** 1.6
 - **H1:** 2rem (`--font-size-2xl`)

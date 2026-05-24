@@ -34,13 +34,11 @@ IMARA-Website/
 │   │   └── responsive.css  ← Mobile-Anpassungen
 │   ├── js/
 │   │   ├── main.js
-│   │   ├── performance.js
 │   │   └── services-modal.js  ← Popup-Logik für services.html
 │   ├── images/
 │   │   ├── logo/           ← logo_imara_small.png, logo_imara.png
 │   │   ├── pictures/       ← bild_1.jpg, bild_2.jpg, bild_3.jpg, contact.jpg
 │   │   └── flyer/
-│   ├── fonts/
 │   └── texts/              ← Quelltexte (services.md, contactdata.md, …)
 ├── config/
 │   ├── sitemap.xml         ← Domain: imara-epc.de
