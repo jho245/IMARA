@@ -55,12 +55,13 @@ Einheitlich über CSS-Variablen (`assets/css/variables.css`):
 - Klasse: `.service-card`
 - Mindestbreite im Grid: 320px (`minmax(320px, 1fr)`)
 - Hover-Effekt: `translateY(-4px)` + verstärkter Schatten (Transition: 0.2s)
-- Klickbar: Öffnet ein Popup-Modal mit Titel und Beschreibung
+- Jede Karte enthält Titel, Kurztext und einen Button `.service-card__button`
+- Der Button öffnet ein Popup-Modal mit Titel und Beschreibung aus den `data-*`-Attributen
 
 ## Modal / Popup
 
 - Overlay: `#service-modal` mit Klasse `.modal-overlay`
-- Öffnen: Klick auf `.service-card[data-description]`
+- Öffnen: Klick auf `.service-card__button` innerhalb einer `.service-card[data-description]`
 - Schließen: Klick außerhalb des Modals oder Escape-Taste
 - Animation: `translateY(-12px)` → `translateY(0)`, 0.18s ease
 
@@ -68,21 +69,29 @@ Einheitlich über CSS-Variablen (`assets/css/variables.css`):
 
 - Ablageort: `assets/images/pictures/`
 - Verwendete Dateien: `bild_1.jpg` (Startseite), `bild_2.jpg` (Über uns), `bild_3.jpg` (Preise), `contact.jpg` (Kontakt)
-- Layout: Bild und Text nebeneinander via Flexbox (je `flex: 1`, max. 500px Bildbreite)
+- Startseite und Kontakt nutzen `.layout-split` für Bild und Text nebeneinander.
+- Über-uns- und Preisseite nutzen auf Desktop ein Float-Bild rechts und auf Mobilgeräten Bild und Text in gleicher Containerbreite.
 - Alt-Texte: keyword-reich, beschreibend, immer gesetzt
 
 ## Layout-Muster
 
-Bild + Text nebeneinander (verwendet auf index, about, pricing, services):
+Bild + Text nebeneinander (verwendet auf index und contact):
 ```css
 display: flex;
 align-items: center;
 gap: 2rem;
 ```
 
-Float-Layout (verwendet auf about.html für Bild + mehrsektionigen Text):
+Float-Layout (verwendet auf about.html und pricing.html für Bild + mehrsektionigen Text):
 ```css
 float: right;
 width: 45%;
 margin: 0 0 var(--spacing-lg) var(--spacing-lg);
 ```
+
+Mobile Container-Logik fuer about.html und pricing.html:
+```css
+padding: 0 var(--spacing-lg);
+```
+
+Die Bilder werden auf Mobilgeräten auf `width: 100%` innerhalb dieses gepaddeten Containers gesetzt, damit sie die gleiche Breite wie der Text haben.

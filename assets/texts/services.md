@@ -1,29 +1,75 @@
-## **Gewerbereinigung**  
-Ein sauberes Geschäftsumfeld ist die Visitenkarte Ihres Unternehmens. Wir sorgen dafür, dass Verkaufsflächen, Lager und Kundenbereiche stets einen glänzenden Eindruck hinterlassen. Dabei arbeiten wir effizient und diskret, um Ihren Betriebsablauf nicht zu stören. 
+# Leistungsbeschreibungen
 
-## **Praxisreinigung**  
-Hygiene ist in medizinischen Einrichtungen lebenswichtig. Unsere spezialisierte Praxisreinigung erfüllt höchste Standards an Sauberkeit und Desinfektion. Wir reinigen Wartezimmer, Behandlungsräume und Sanitäranlagen mit größter Sorgfalt, damit sich Patienten und Personal sicher fühlen.  
+Referenztexte fuer `services.html`. Die Website fuehrt aktuell 12 Leistungen.
 
-## **Büroreinigung**  
-Ein sauberer Arbeitsplatz fördert die Motivation und Gesundheit Ihrer Mitarbeiter. Wir kümmern uns um Staub, Abfallentsorgung und die Pflege Ihrer Büroausstattung. Ob täglich oder wöchentlich – wir halten Ihren Rücken frei für das Wesentliche.  
+## Gewerbereinigung
 
-## **Grundreinigung**  
-Wenn die Unterhaltsreinigung nicht mehr ausreicht, kommt unsere Grundreinigung zum Einsatz. Wir rücken hartnäckigen Verschmutzungen zu Leibe, pflegen Bodenbeläge intensiv und reinigen auch schwer zugängliche Ecken, damit alles wieder in neuem Glanz erstrahlt.  
+Kurztext: Reinigung fuer Verkaufsflaechen, Lager, Kundenbereiche und gewerbliche Raeume - zuverlaessig und diskret im laufenden Betrieb.
 
-## **Leerstandreinigung**  
-Nach dem Auszug ist vor dem Einzug. Wir bereiten Immobilien für die Neuvermietung oder den Verkauf vor. Von der Fensterreinigung bis zur Bodenpflege entfernen wir alle Spuren der Vornutzer, damit die Übergabe reibungslos verläuft.  
+Detailtext: Ein sauberes Geschaeftsumfeld ist die Visitenkarte Ihres Unternehmens. Wir sorgen dafuer, dass Verkaufsflaechen, Lager und Kundenbereiche stets einen glaenzenden Eindruck hinterlassen. Dabei arbeiten wir effizient und diskret, um Ihren Betriebsablauf nicht zu stoeren.
 
-## **Haushaltsreinigung**  
-Gönnen Sie sich mehr Freizeit! Wir übernehmen die Reinigung Ihrer privaten Wohnräume zuverlässig und gründlich. Wir putzen, saugen und wischen ganz nach Ihren individuellen Wünschen, damit Sie sich in Ihrem Zuhause rundum wohlfühlen können.  
+## Praxisreinigung
 
-## **Aufenthaltsreinigung**  
-Saubere Sozialräume sind ein Zeichen von Wertschätzung gegenüber Ihren Mitarbeitern. Wir reinigen Kantinen, Pausenräume und Umkleiden regelmäßig und gründlich, um eine angenehme und hygienische Pausenatmosphäre zu garantieren.  
+Kurztext: Sorgfaeltige Reinigung von Wartezimmern, Behandlungsraeumen und Sanitaerbereichen mit besonderem Blick auf Hygiene.
 
-## **Event-Reinigung**  
-Nach der Feier ist vor der Sauberkeit. Egal ob Firmenjubiläum, Konzert oder private Party – wir sorgen während und vor allem nach Ihrem Event für Ordnung. Wir beseitigen Müll und Verschmutzungen schnell und diskret, damit die Location zeitnah wieder einsatzbereit ist.  
+Detailtext: Hygiene ist in medizinischen Einrichtungen lebenswichtig. Unsere spezialisierte Praxisreinigung erfuellt hoechste Standards an Sauberkeit und Desinfektion. Wir reinigen Wartezimmer, Behandlungsraeume und Sanitaeranlagen mit groesster Sorgfalt, damit sich Patienten und Personal sicher fuehlen.
 
-## **Sonderreinigung**  
-Manche Aufgaben erfordern spezielles Know-how und Gerät. Ob hartnäckige Flecken, Fensterreinigung in großer Höhe oder die Aufarbeitung spezieller Bodenbeläge – unsere Sonderreinigung findet für jedes Problem die passende Lösung.  
+## Bueroreinigung
 
-## **Objektbetreuung**  
-Wir behalten den Überblick über Ihre Immobilie. Neben der Reinigung kümmern wir uns im Rahmen der Objektbetreuung um die Kontrolle der Haustechnik, kleine Instandsetzungen und die allgemeine Ordnung im und um das Gebäude.  
+Kurztext: Regelmaessige Bueroreinigung fuer Arbeitsplaetze, Gemeinschaftsflaechen und Sanitaerbereiche - passend zu Ihren Ablaeufen.
+
+Detailtext: Ein sauberer Arbeitsplatz foerdert die Motivation und Gesundheit Ihrer Mitarbeiter. Wir kuemmern uns um Staub, Abfallentsorgung und die Pflege Ihrer Bueroausstattung. Ob taeglich oder woechentlich - wir halten Ihren Ruecken frei fuer das Wesentliche.
+
+## Grundreinigung
+
+Kurztext: Intensive Reinigung fuer hartnaeckige Verschmutzungen, schwer erreichbare Bereiche und gruendliche Bodenpflege.
+
+Detailtext: Wenn die Unterhaltsreinigung nicht mehr ausreicht, kommt unsere Grundreinigung zum Einsatz. Wir ruecken hartnaeckigen Verschmutzungen zu Leibe, pflegen Bodenbelaege intensiv und reinigen auch schwer zugaengliche Ecken, damit alles wieder in neuem Glanz erstrahlt.
+
+## Leerstandreinigung
+
+Kurztext: Reinigung leerstehender Wohnungen, Haeuser oder Gewerbeflaechen zur Uebergabe, Neuvermietung oder zum Verkauf.
+
+Detailtext: Nach dem Auszug ist vor dem Einzug. Wir bereiten Immobilien fuer die Neuvermietung oder den Verkauf vor. Von der Fensterreinigung bis zur Bodenpflege entfernen wir alle Spuren der Vornutzer, damit die Uebergabe reibungslos verlaeuft.
+
+## Haushaltsreinigung
+
+Kurztext: Gruendliche Reinigung privater Wohnraeume - einmalig oder regelmaessig, abgestimmt auf Ihre Wuensche und Routinen.
+
+Detailtext: Goennen Sie sich mehr Freizeit! Wir uebernehmen die Reinigung Ihrer privaten Wohnraeume zuverlaessig und gruendlich. Wir putzen, saugen und wischen ganz nach Ihren individuellen Wuenschen, damit Sie sich in Ihrem Zuhause rundum wohlfuehlen koennen.
+
+## Ferienwohnung
+
+Kurztext: Reinigung von Ferienwohnungen zwischen den Aufenthalten - sauber, ordentlich und bereit fuer die naechsten Gaeste.
+
+Detailtext: Fuer Ferienwohnungen ist eine zuverlaessige Reinigung zwischen den Aufenthalten besonders wichtig. Wir sorgen dafuer, dass Wohnbereiche, Kueche, Bad und Schlafraeume sauber, ordentlich und einladend fuer die naechsten Gaeste vorbereitet sind. Auf Wunsch stimmen wir die Reinigung flexibel auf Anreise- und Abreisezeiten ab.
+
+## Treppenhausreinigung
+
+Kurztext: Regelmaessige Reinigung von Treppenhaeusern, Eingangsbereichen und gemeinsam genutzten Flaechen.
+
+Detailtext: Ein gepflegtes Treppenhaus traegt zum ersten Eindruck eines Gebaeudes bei. Wir reinigen Treppen, Gelaender, Eingangsbereiche, Briefkastenanlagen und gemeinsam genutzte Flaechen zuverlaessig und regelmaessig - passend zu den Anforderungen Ihrer Immobilie.
+
+## Aufenthaltsreinigung
+
+Kurztext: Saubere Kantinen, Pausenraeume, Umkleiden und Sozialbereiche fuer eine gepflegte Atmosphaere im Arbeitsalltag.
+
+Detailtext: Saubere Sozialraeume sind ein Zeichen von Wertschaetzung gegenueber Ihren Mitarbeitern. Wir reinigen Kantinen, Pausenraeume und Umkleiden regelmaessig und gruendlich, um eine angenehme und hygienische Pausenatmosphaere zu garantieren.
+
+## Events-Reinigung
+
+Kurztext: Reinigung vor, waehrend oder nach Veranstaltungen - damit Ihre Location schnell wieder ordentlich nutzbar ist.
+
+Detailtext: Nach Ihrer Veranstaltung sorgen wir schnell und diskret fuer Ordnung. Egal ob Firmenjubilaeum, Konzert oder private Party - wir beseitigen Muell und Verschmutzungen, damit die Location zeitnah wieder einsatzbereit ist.
+
+## Sonderreinigung
+
+Kurztext: Individuelle Reinigungsloesungen fuer besondere Anforderungen, hartnaeckige Verschmutzungen und spezielle Flaechen.
+
+Detailtext: Manche Aufgaben erfordern spezielles Know-how und Geraet. Ob hartnaeckige Flecken oder die Aufarbeitung spezieller Bodenbelaege - unsere Sonderreinigung findet fuer jedes Problem die passende Loesung.
+
+## Objektbetreuung
+
+Kurztext: Unterstuetzung bei Reinigung, Ordnung und regelmaessiger Betreuung Ihrer Immobilie oder Ihres Gewerbeobjekts.
+
+Detailtext: Wir behalten den Ueberblick ueber Ihre Immobilie. Neben der Reinigung kuemmern wir uns im Rahmen der Objektbetreuung um die Kontrolle der Haustechnik, kleine Instandsetzungen und die allgemeine Ordnung im und um das Gebaeude.

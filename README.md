@@ -47,6 +47,7 @@ IMARA-Website/
 └── docs/
     ├── STYLE_GUIDE.md
     ├── SEO_CHECKLIST.md
+    ├── TEXTQUALITY_SUGGESTIONS.md
     └── MAINTENANCE.md
 ```
 
@@ -72,5 +73,5 @@ python3 -m http.server 8000
 - [x] SSL-Zertifikat bei Hostinger aktivieren
 - [x] Dateien per FTP/SFTP hochladen
 - [ ] Google Search Console einrichten & Sitemap einreichen
-- [ ] Google My Business Eintrag erstellen
+- [ ] Google Business Profile erstellen
 - [x] Steuernummer im Impressum prüfen (aktuell: 133/5838/6163)

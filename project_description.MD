@@ -62,6 +62,7 @@ IMARA_EPC/
 └── docs/
     ├── STYLE_GUIDE.md         # Design-Richtlinien
     ├── SEO_CHECKLIST.md       # SEO-Optimierungen
+    ├── TEXTQUALITY_SUGGESTIONS.md # Redaktionelle Textnotizen
     └── MAINTENANCE.md         # Wartungshandbuch
 ```
 
@@ -119,17 +120,17 @@ IMARA_EPC/
 <section class="quote">            <!-- Zitat der Gründerin -->
 ```
 
-**Hinweis:** Kein Team-Bereich mit Fotos, keine Zertifizierungs-Section. Bild (bild_2.jpg) wird per CSS-float rechts im company-story-Bereich eingebunden.
+**Hinweis:** Kein Team-Bereich mit Fotos, keine Zertifizierungs-Section. Bild (bild_2.jpg) wird auf Desktop per CSS-Float rechts eingebunden und auf Mobilgeräten in gleicher Breite wie der Text dargestellt.
 
 ---
 
 ### 3.3 Leistungen (services.html)
-**Zweck:** Detaillierte Beschreibung aller 10 angebotenen Services
+**Zweck:** Detaillierte Beschreibung aller 12 angebotenen Services
 
 **Inhalte:**
 - Intro-Text
 - 12 Service-Karten im Grid, je mit Titel, Kurztext und Modal-Beschreibung
-- Modal-Overlay: Klick auf Karte öffnet Detailbeschreibung (services-modal.js)
+- Modal-Overlay: Klick auf den Button "Details ansehen" öffnet die Detailbeschreibung (services-modal.js)
 
 **Die 12 Leistungen:**
 1. **Gewerbereinigung** – Verkaufsflächen, Lager, Kundenbereiche
@@ -149,7 +150,7 @@ IMARA_EPC/
 ```html
 <h1>Unsere Leistungen</h1>
 <p>                              <!-- Intro -->
-<section class="services-grid"> <!-- 12 service-card Divs mit Kurztexten und data-Attributen -->
+<section class="services-grid"> <!-- 12 service-card Divs mit Kurztexten, Buttons und data-Attributen -->
 <div id="service-modal">        <!-- Modal-Overlay -->
 ```
 
@@ -160,6 +161,7 @@ IMARA_EPC/
 
 **Inhalte:**
 - Hinweis auf individuelle Angebote auf Anfrage
+- Bild (bild_3.jpg) als Desktop-Float rechts; auf Mobilgeräten gleiche Breite wie der Textcontainer
 - Angebotsfaktoren wie Objektart, Fläche, Umfang und Häufigkeit
 - Einsatzgebiet Düsseldorf und Umgebung
 - FAQ zu Preisen und regelmäßigen Reinigungsterminen
@@ -179,6 +181,8 @@ IMARA_EPC/
 ```html
 <section class="contact-info">
 ```
+
+**Hinweis:** Die Kontaktaufnahme erfolgt über Telefon- und `mailto:`-Links. Es gibt aktuell kein Kontaktformular, kein EmailJS und keine serverseitige Formularverarbeitung.
 
 ---
 
@@ -213,10 +217,10 @@ IMARA_EPC/
 ### 4.1 Performance-Optimierung
 
 **Bilder:**
-- Formate: JPEG und PNG (vorhanden), WebP als Ziel
+- Formate: JPEG und PNG (vorhanden), WebP/srcset als mögliches Ziel
 - Responsive Bildgrößen (srcset) empfohlen
 - Lazy Loading für unterhalb der Falz
-- Max. 100 KB pro Bild
+- Zielgröße: vorhandene Inhaltsbilder möglichst unter ca. 350 KB halten; weitere Optimierung über WebP/srcset möglich
 
 **CSS & JavaScript:**
 - CSS aufgeteilt in variables.css, style.css, responsive.css
@@ -225,7 +229,7 @@ IMARA_EPC/
 
 **Caching:**
 - Browser-Caching via .htaccess aktiviert
-- CDN-Einsatz empfohlen (z. B. Cloudflare)
+- Kein externer JavaScript-/Font-CDN-Einsatz vorgesehen; Hosting-Caching oder Cloudflare optional prüfen
 
 **Ziel:** Lighthouse Score > 90 (Performance, SEO, Best Practices, Accessibility)
 
@@ -263,9 +267,8 @@ IMARA_EPC/
 **HTTPS:** SSL-Zertifikat erforderlich (kostenlos via Let's Encrypt), HTTP → HTTPS Redirect via .htaccess
 
 **Formulare:**
-- Honeypot-Feld gegen Spam
-- Eingabe-Validierung (Client- und Server-Seite)
-- Rate-Limiting empfohlen
+- Aktuell kein Formular vorhanden
+- Bei späterer Formular-Erweiterung: Honeypot-Feld, Eingabevalidierung und Rate-Limiting einplanen
 
 **Datenschutz:**
 - Datenschutzerklärung vorhanden (datenschutz.html)
@@ -278,7 +281,7 @@ IMARA_EPC/
 - Alt-Texte für alle Bilder
 - Semantisches HTML (`header`, `nav`, `main`, `footer`, `section`)
 - Hamburger-Menü mit aria-label und aria-expanded
-- Formular-Labels mit input-Elementen verknüpft
+- Formular-Labels mit input-Elementen verknüpfen, falls später ein Formular ergänzt wird
 - Ausreichender Farbkontrast (4.5:1 für Text)
 - Keyboard-Navigation möglich (inkl. Modal)
 - Focus-Indikatoren sichtbar
@@ -318,7 +321,7 @@ scp -r . user@host:/public_html/
 # 4. Testing auf Live-Server
 # Performance-Test (Lighthouse)
 # SEO-Test
-# Kontaktlinks testen
+# Telefon- und Mailto-Links testen
 # Mobile-Test
 ```
 
@@ -332,7 +335,7 @@ scp -r . user@host:/public_html/
 - [ ] Lighthouse Score > 90
 - [ ] SSL-Zertifikat aktiv
 - [ ] sitemap.xml und robots.txt hochgeladen
-- [ ] Google My Business erstellt
+- [ ] Google Business Profile erstellt
 - [ ] Datenschutzerklärung und Impressum korrekt und vollständig
 - [ ] Telefon- und E-Mail-Links getestet
 - [ ] Alle internen und externen Links funktionieren
@@ -344,7 +347,7 @@ scp -r . user@host:/public_html/
 
 - [ ] Bei Google Search Console anmelden
 - [ ] Sitemap einreichen
-- [ ] Google My Business validieren
+- [ ] Google Business Profile validieren
 - [ ] In lokalen Branchenverzeichnissen eintragen (Düsseldorf)
 - [ ] Erste Rankings beobachten
 - [ ] Nutzerfeedback sammeln
@@ -395,7 +398,7 @@ scp -r . user@host:/public_html/
 - Datenschutzerklärung überprüfen (DSGVO-Änderungen)
 - Impressum aktualisieren
 - Vollständiges Website-Backup
-- Security-Audit (.htaccess, PHP)
+- Security-Audit (.htaccess, HTTPS, Security-Header, externe Skripte)
 
 ---
 
@@ -412,6 +415,6 @@ scp -r . user@host:/public_html/
 
 ---
 
-**Version:** 1.1
-**Datum:** 2026-05-06
+**Version:** 1.2
+**Datum:** 2026-05-24
 **Status:** Aktiv

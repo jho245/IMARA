@@ -24,7 +24,7 @@
 
 ## Off-Page
 
-- [ ] Google My Business Eintrag erstellt und verifiziert
+- [ ] Google Business Profile erstellt und verifiziert
 - [ ] In relevante Branchenverzeichnisse eingetragen
 - [ ] Google Search Console eingerichtet
 - [ ] Sitemap in Search Console eingereicht

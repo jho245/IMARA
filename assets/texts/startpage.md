@@ -1,87 +1,67 @@
-# Startseite – Reinigungsfirma Samini
+# Startseite - IMARA Elite Property Care Duesseldorf UG (haftungsbeschraenkt)
+
+Referenztext fuer `index.html`.
 
 ## Hero-Section
 
-### Hauptüberschrift
+### Hauptueberschrift
 
-**Saubere Räume. Wohlbefühl-Garantie.**
+**Designing clean.**
+
+**Delivering trust.**
 
 ### Unterzeile
 
-Zuverlässige Reinigung für Privathaushalt und Gewerbe – mit Engagement und Sorgfalt seit 2020.
+Zuverlaessige Reinigung fuer Privathaushalte und Gewerbe - mit Engagement, Sorgfalt und persoenlichem Anspruch.
 
-### Call-to-Action Button
+### Call-to-Action
 
-**→ Angebot anfordern**  
-oder  
-**→ Jetzt kontaktieren**
+**Jetzt kontaktieren**
 
----
+## Kurze Einfuehrung
 
-## Kurze Einführung (unter Hero)
+Ob Privathaushalt, Buero oder Spezialreinigung: Wir kuemmern uns zuverlaessig um saubere Raeume. Mit persoenlichem Einsatz, sorgfaeltiger Arbeit und transparenten Preisen gewinnen wir das Vertrauen unserer Kundinnen und Kunden.
 
-Ob Privathaushalt, Büro oder Spezialreinigung – wir kümmern uns um Ihre Sauberkeit. Mit persönlichem Einsatz, zuverlässiger Arbeit und transparenten Preisen. Seit über vier Jahren das Vertrauen unserer Kundinnen und Kunden.
-
----
-
-## Services im Überblick (3-4 Karten)
+## Services im Ueberblick
 
 ### Karte 1: Privathaushalt-Reinigung
 
-**🏠 Ihr Zuhause. Sauber.**
+**Ihr Zuhause. Sauber.**
 
-Regelmäßige oder einmalige Reinigung für Ihr Zuhause. Gründlich, zuverlässig, respektvoll – wie für das eigene Heim.
+Regelmaessige oder einmalige Reinigung fuer Ihr Zuhause. Gruendlich, zuverlaessig, respektvoll - wie fuer das eigene Heim.
 
-[Mehr erfahren →]
+### Karte 2: Buero und Gewerbe
 
----
+**Arbeitsplatz. Professionell.**
 
-### Karte 2: Büro & Gewerbe
-
-**💼 Arbeitsplatz. Professionell.**
-
-Saubere Büros steigern die Produktivität. Wir kümmern uns um gründliche, regelmäßige Reinigung – angepasst an Ihre Zeiten.
-
-[Mehr erfahren →]
-
----
+Saubere Bueros steigern die Produktivitaet. Wir kuemmern uns um gruendliche, regelmaessige Reinigung - angepasst an Ihre Zeiten.
 
 ### Karte 3: Fensterreinigung
 
-**✨ Klare Sicht. Gepflegt.**
+**Klare Sicht. Gepflegt.**
 
-Streifenfreie Fenster innen und außen. Auch für Fassaden und schwer erreichbare Stellen – wir bringen Glanz.
-
-[Mehr erfahren →]
-
----
+Streifenfreie Fenster innen und aussen. Auch fuer schwer erreichbare Stellen - wir bringen Glanz.
 
 ### Karte 4: Spezialreinigungen
 
-**🎯 Besondere Aufgaben. Gelöst.**
+**Besondere Aufgaben. Geloest.**
 
-Tiefenreinigung, Umzugsreinigung, Treppenhausreinigung – für alles, das mehr braucht als Standard-Saubermachen.
+Tiefenreinigung, Umzugsreinigung, Treppenhausreinigung - fuer alles, das mehr braucht als Standard-Saubermachen.
 
-[Mehr erfahren →]
+## Vertrauensaufbau
 
----
+**Warum Sie uns vertrauen koennen:**
 
-## Vertrauensaufbau (kurzer Abschnitt)
+- Seit 2024 im Einsatz - zuverlaessig, sorgfaeltig und persoenlich erreichbar
+- Persoenlicher Kontakt - Sie erhalten einen direkten Ansprechpartner
+- Transparente Preise - keine versteckten Kosten
+- Flexible Loesungen - angepasst an Ihre Wuensche
 
-**Warum Sie uns trauen können:**
-
-✓ Gegründet 2020 – vier Jahre Erfahrung und Zuverlässigkeit  
-✓ Persönlicher Kontakt – Sie erhalten einen direkten Ansprechpartner  
-✓ Transparente Preise – keine versteckten Kosten  
-✓ Flexible Lösungen – angepasst an Ihre Wünsche
-
----
-
-## Call-to-Action Section (am Ende vor Footer)
+## Call-to-Action Section
 
 ### Headline
 
-**Bereit für saubere Räume?**
+**Bereit fuer saubere Raeume?**
 
 ### Subheadline
 
@@ -89,47 +69,19 @@ Vereinbaren Sie einen unverbindlichen Termin oder fordern Sie ein Angebot an.
 
 ### Buttons
 
-**[Kontakt aufnehmen]** | **[Preisliste ansehen]**
+**Kontakt aufnehmen** | **Preisliste ansehen**
 
----
+## Meta-Informationen
 
-## Alternative Hero-Varianten (kürzere Versionen)
+**Page Title:** Gebaeudereinigung Duesseldorf | IMARA Elite Property Care Duesseldorf UG (haftungsbeschraenkt)
 
-**Variante A (noch kürzer):**
+**Meta Description:** Professionelle Gebaeudereinigung in Duesseldorf - IMARA Elite Property Care Duesseldorf UG (haftungsbeschraenkt). Bueroreinigung, Praxisreinigung, Haushaltsreinigung & mehr. Jetzt Angebot anfordern!
 
-- Haupttext: „Saubere Räume mit Engagement seit 2020."
-- Button: „Jetzt anfragen"
-
-**Variante B (emotional):**
-
-- Haupttext: „Saubere Räume. Entspannte Menschen."
-- Subtext: „Professionelle Reinigung, die Ihnen Freizeit schenkt."
-- Button: „Kostenlos beraten"
-
----
-
-## Meta-Informationen (für HTML)
-
-**Page Title:** Reinigungsfirma Samini | Büro & Privathaushalt | Konstanz
-
-**Meta Description:** Professionelle Reinigung für Privathaushalt und Gewerbe. Zuverlässig, gründlich, transparent. Kostenlos anfragen!
-
-**Keywords:** Reinigung Konstanz, Büroreinigung, Privathaushalt, Fensterreinigung, Spezialreinigung
-
----
-
-## Design-Tipps
-
-- **Hero-Bild:** Sauberer, moderner Raum (Wohnzimmer oder Büro) – einladend und positiv
-- **Farben:** Sauberes Weiß/Grau mit Akzentfarbe (z.B. helles Blau oder Grün für Frische)
-- **Icons:** Für jede Service-Karte – einfach, modern, verständlich
-- **Schrift:** Gut lesbar, nicht zu verspielt – Vertrauensvoll
-
----
+**Keywords:** Gebaeudereinigung Duesseldorf, Bueroreinigung Duesseldorf, Praxisreinigung Duesseldorf, Haushaltsreinigung Duesseldorf, Gewerbereinigung Duesseldorf
 
 ## Mobile-Optimierung
 
-- Hero-Text verkürzen auf Mobile
-- Service-Karten als Stapel (1 Spalte auf Mobil, 2-3 auf Desktop)
-- Buttons groß genug zum Tippen (mind. 48px)
-- Schnelle Ladezeit durch optimierte Bilder
+- Hero-Bild und Text stapeln auf Mobilgeraeten.
+- Service-Karten werden einspaltig dargestellt.
+- Buttons haben mindestens 48px Hoehe.
+- Bilder sind lokal optimiert und werden ohne externe Bild-CDNs geladen.
