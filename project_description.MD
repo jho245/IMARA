@@ -130,7 +130,7 @@ IMARA_EPC/
 
 **Inhalte:**
 - Intro-Text
-- Bild (bild_4.jpg) als Desktop-Float rechts; Intro und Service-Karten laufen im selben Container am Bild vorbei. Auf Mobilgeräten haben Bild und Textcontainer die gleiche Breite.
+- Bild (bild_4.jpg) als rechte Desktop-Spalte neben Intro und Service-Karten; auf Tablet und Mobilgeräten wird das Bild oberhalb der Inhalte gestapelt, damit die Karten stabil breit genug bleiben.
 - 12 Service-Karten im Grid, je mit Titel, Kurztext und Modal-Beschreibung
 - Modal-Overlay: Klick auf den Button "Details ansehen" öffnet die Detailbeschreibung (services-modal.js)
 

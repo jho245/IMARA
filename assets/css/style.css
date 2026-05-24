@@ -163,10 +163,11 @@ h2 { font-size: var(--font-size-xl); margin-bottom: var(--spacing-md); }
   padding: 0 var(--spacing-lg);
 }
 
-.services-layout::after {
-  clear: both;
-  content: "";
-  display: table;
+.services-content {
+  align-items: start;
+  display: grid;
+  gap: var(--spacing-lg);
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
 }
 
 .about-float-img {
@@ -177,18 +178,23 @@ h2 { font-size: var(--font-size-xl); margin-bottom: var(--spacing-md); }
   width: 45%;
 }
 
-.services-float-img {
+.services-side-img {
   border-radius: 4px;
-  float: right;
-  margin: 0 0 var(--spacing-lg) var(--spacing-lg);
-  max-width: 360px;
-  width: 32%;
+  width: 100%;
 }
 
-.services-content .services-grid {
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  max-width: none;
+.services-layout .services-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: var(--spacing-lg);
   padding: 0;
+}
+
+.service-card {
+  min-width: 0;
+}
+
+.service-card h2 {
+  overflow-wrap: anywhere;
 }
 
 .pricing-content::after {

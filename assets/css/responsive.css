@@ -77,17 +77,22 @@
     padding: 0 var(--spacing-lg) !important;
   }
 
-  .services-float-img {
+  .services-content {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .services-side-img {
     display: block !important;
-    float: none !important;
+    order: -1;
     width: 100% !important;
     max-width: 100% !important;
     margin: 0 0 var(--spacing-lg) 0 !important;
   }
 
   /* Service-Grid: 1 Spalte */
-  .services-grid {
-    grid-template-columns: 1fr;
+  .services-layout .services-grid {
+    grid-template-columns: 1fr !important;
   }
 
   /* Abstände reduzieren */
@@ -125,6 +130,16 @@
 
 /* Tablet: 768px – 1024px */
 @media (min-width: 768px) and (max-width: 1024px) {
+  .services-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .services-side-img {
+    order: -1;
+    width: 100%;
+  }
+
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
