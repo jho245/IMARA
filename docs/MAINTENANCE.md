@@ -5,14 +5,14 @@
 - Backup der Website erstellen
 - Security-Updates einspielen (Server, CMS falls vorhanden)
 - Inhalte prüfen und aktualisieren
-- Kontaktformular testen
+- Telefon- und E-Mail-Links testen
 
 ## Halbjährliche Aufgaben
 
 - SEO-Performance in Google Search Console prüfen
 - Broken Links checken (z.B. mit Broken Link Checker)
 - Performance-Audit mit Lighthouse
-- Google Analytics / Matomo-Daten auswerten
+- SEO- und Sichtbarkeitsdaten auswerten, falls entsprechende Tools eingerichtet sind
 
 ## Jährliche Aufgaben
 

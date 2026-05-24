@@ -150,6 +150,30 @@ h2 { font-size: var(--font-size-xl); margin-bottom: var(--spacing-md); }
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
+.service-card p {
+  margin-bottom: var(--spacing-md);
+}
+
+.service-card__button {
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  cursor: pointer;
+  font-family: var(--font-family-bold);
+  font-size: var(--font-size-base);
+  padding: 0;
+  text-align: left;
+}
+
+.service-card__button:hover {
+  color: var(--color-primary-dark);
+}
+
+.service-card__button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
 /* Formulare */
 form > div {
   margin-bottom: var(--spacing-md);

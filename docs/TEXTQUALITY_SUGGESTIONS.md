@@ -8,7 +8,7 @@ Diese Notiz sammelt Textvorschlaege, die spaeter in Ruhe geprueft und ggf. in di
 
 Aktuell:
 
-> Saubere Raeume. Wohlbefuehl-Garantie.
+> Saubere Raeume. Wohlfuehl-Garantie.
 
 Vorschlag:
 

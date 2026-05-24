@@ -8,10 +8,10 @@ Statische HTML/CSS/JS-Website für die Reinigungsfirma IMARA Elite Property Care
 | ------------------ | ----------------------------------------------------------------- |
 | `index.html`       | Startseite – Hero, Leistungsüberblick, Vertrauenssignale, CTA     |
 | `about.html`       | Über uns – Geschichte, Werte, Dienstleistungen, Zitat             |
-| `services.html`    | Leistungen – 10 klickbare Service-Karten mit Popup-Beschreibungen |
-| `pricing.html`     | Preise – Hinweis auf individuelle Angebote                        |
+| `services.html`    | Leistungen – 10 Service-Karten mit Kurztexten und Details         |
+| `pricing.html`     | Preise – Angebotsfaktoren, Einsatzgebiet und FAQ                  |
 | `contact.html`     | Kontakt – Adresse, Telefon, E-Mail, Bild                          |
-| `impressum.html`   | Impressum gemäß § 5 TMG                                           |
+| `impressum.html`   | Impressum gemäß § 5 DDG                                           |
 | `datenschutz.html` | Datenschutzerklärung gemäß DSGVO                                  |
 | `404.html`         | Fehlerseite                                                       |
 

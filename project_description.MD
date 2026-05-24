@@ -19,7 +19,7 @@ IMARA_EPC/
 ├── about.html                 # Über uns
 ├── services.html              # Leistungen/Services
 ├── pricing.html               # Preisliste
-├── contact.html               # Kontakt & Kontaktformular
+├── contact.html               # Kontakt
 ├── impressum.html             # Impressum
 ├── datenschutz.html           # Datenschutzerklärung
 ├── 404.html                   # Fehlerseite
@@ -33,7 +33,6 @@ IMARA_EPC/
 │   │
 │   ├── js/
 │   │   ├── main.js            # Hauptskripte (Navigation, allg. Interaktion)
-│   │   ├── form-handler.js    # Kontaktformular-Verarbeitung
 │   │   └── services-modal.js  # Modal-Overlay für Leistungsdetails
 │   │
 │   ├── images/
@@ -129,7 +128,7 @@ IMARA_EPC/
 
 **Inhalte:**
 - Intro-Text
-- 10 Service-Karten im Grid, je mit Titel und Modal-Beschreibung
+- 10 Service-Karten im Grid, je mit Titel, Kurztext und Modal-Beschreibung
 - Modal-Overlay: Klick auf Karte öffnet Detailbeschreibung (services-modal.js)
 
 **Die 10 Leistungen:**
@@ -148,7 +147,7 @@ IMARA_EPC/
 ```html
 <h1>Unsere Leistungen</h1>
 <p>                              <!-- Intro -->
-<section class="services-grid"> <!-- 10 service-card Divs mit data-Attributen -->
+<section class="services-grid"> <!-- 10 service-card Divs mit Kurztexten und data-Attributen -->
 <div id="service-modal">        <!-- Modal-Overlay -->
 ```
 
@@ -158,9 +157,10 @@ IMARA_EPC/
 **Zweck:** Transparente Preisgestaltung und Entscheidungshilfe
 
 **Inhalte:**
-- Preismodelle nach Service-Typ
 - Hinweis auf individuelle Angebote auf Anfrage
-- Verlinkung zum Kontaktformular
+- Angebotsfaktoren wie Objektart, Fläche, Umfang und Häufigkeit
+- Einsatzgebiet Düsseldorf und Umgebung
+- FAQ zu Preisen und regelmäßigen Reinigungsterminen
 
 ---
 
@@ -173,26 +173,15 @@ IMARA_EPC/
 - Adresse: Karl-Anton-Str. 17, 40211 Düsseldorf
 - Öffnungszeiten: Mo–Fr, 08:00–18:00 Uhr
 
-**Kontaktformular-Felder:**
-- Name (erforderlich)
-- E-Mail (erforderlich, validiert)
-- Telefon (optional)
-- Service-Auswahl (Dropdown)
-- Nachricht (Textarea)
-- Datenschutz-Zustimmung (erforderlich)
-- Spam-Schutz (Honeypot oder reCAPTCHA)
-
 **Seitenstruktur:**
 ```html
-<section class="contact-form">
 <section class="contact-info">
-<section class="map">           <!-- Optional: Google Maps Embed -->
 ```
 
 ---
 
 ### 3.6 Impressum (impressum.html)
-**Zweck:** Rechtliche Anforderung (§ 5 TMG)
+**Zweck:** Rechtliche Anforderung (§ 5 DDG)
 
 **Erforderliche Inhalte:**
 - Vollständiger Name: IMARA Elite Property Care / Imane Samini
@@ -213,7 +202,6 @@ IMARA_EPC/
 - Speicherdauer
 - Betroffenenrechte
 - Cookies und externe Services
-- Verwendung des Kontaktformulars (form-handler.js)
 - SSL/TLS-Verschlüsselung
 
 ---
@@ -299,9 +287,8 @@ IMARA_EPC/
 
 ### 5.1 Hosting-Anforderungen
 
-- PHP 7.4+ (für Formularverarbeitung via form-handler.js/PHP)
 - SSL-Zertifikat aktiv
-- E-Mail-Versand konfiguriert (info@imara-epc.de)
+- E-Mail-Adresse konfiguriert (info@imara-epc.de)
 
 ### 5.2 Domain & SSL
 
@@ -329,7 +316,7 @@ scp -r . user@host:/public_html/
 # 4. Testing auf Live-Server
 # Performance-Test (Lighthouse)
 # SEO-Test
-# Formulare testen
+# Kontaktlinks testen
 # Mobile-Test
 ```
 
@@ -345,7 +332,7 @@ scp -r . user@host:/public_html/
 - [ ] sitemap.xml und robots.txt hochgeladen
 - [ ] Google My Business erstellt
 - [ ] Datenschutzerklärung und Impressum korrekt und vollständig
-- [ ] Kontaktformular getestet (inkl. E-Mail-Versand)
+- [ ] Telefon- und E-Mail-Links getestet
 - [ ] Alle internen und externen Links funktionieren
 - [ ] 404-Seite vorhanden
 - [ ] Modal auf services.html getestet (alle 10 Karten)
@@ -372,11 +359,7 @@ scp -r . user@host:/public_html/
 
 **JavaScript-Module:**
 - `main.js` – Navigation (Hamburger-Menü), allgemeine Interaktion
-- `form-handler.js` – Kontaktformular-Validierung und -Versand
 - `services-modal.js` – Modal-Overlay für Leistungsdetails (services.html)
-
-**Backend (Kontaktformular):**
-- PHP (serverseitige Verarbeitung, E-Mail-Versand)
 
 **Kein CMS, kein Framework** – statische HTML-Seiten für maximale Performance und einfache Wartung.
 
@@ -399,7 +382,7 @@ scp -r . user@host:/public_html/
 **Regelmäßig (monatlich):**
 - Backups überprüfen
 - Inhalte aktualisieren (Preise, Leistungen)
-- Kontaktformular testen
+- Kontaktlinks testen
 
 **Halbjährlich:**
 - SEO-Performance überprüfen (Google Search Console)
