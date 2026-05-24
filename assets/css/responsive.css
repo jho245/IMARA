@@ -72,15 +72,6 @@
     margin: 0 0 var(--spacing-lg) 0 !important;
   }
 
-  .pricing-float-img {
-    display: block;
-    float: none;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    margin: 0 0 var(--spacing-lg) 0;
-  }
-
   /* Service-Grid: 1 Spalte */
   .services-grid {
     grid-template-columns: 1fr;
@@ -102,6 +93,20 @@
   /* Footer */
   footer {
     padding: var(--spacing-md);
+  }
+
+  .pricing-content {
+    margin: var(--spacing-lg) auto !important;
+    padding: 0 var(--spacing-lg) !important;
+  }
+
+  .pricing-content > .pricing-float-img {
+    display: block !important;
+    float: none !important;
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+    margin: 0 0 var(--spacing-lg) 0 !important;
   }
 }
 
