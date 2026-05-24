@@ -68,9 +68,9 @@ Einheitlich über CSS-Variablen (`assets/css/variables.css`):
 ## Bilder
 
 - Ablageort: `assets/images/pictures/`
-- Verwendete Dateien: `bild_1.jpg` (Startseite), `bild_2.jpg` (Über uns), `bild_3.jpg` (Preise), `contact.jpg` (Kontakt)
+- Verwendete Dateien: `bild_1.jpg` (Startseite), `bild_2.jpg` (Über uns), `bild_3.jpg` (Preise), `bild_4.jpg` (Leistungen), `contact.jpg` (Kontakt)
 - Startseite und Kontakt nutzen `.layout-split` für Bild und Text nebeneinander.
-- Über-uns- und Preisseite nutzen auf Desktop ein Float-Bild rechts und auf Mobilgeräten Bild und Text in gleicher Containerbreite.
+- Über-uns-, Leistungs- und Preisseite nutzen auf Desktop ein Float-Bild rechts und auf Mobilgeräten Bild und Text in gleicher Containerbreite. Auf der Leistungsseite laufen Intro und Service-Karten im selben Float-Container am Bild vorbei.
 - Alt-Texte: keyword-reich, beschreibend, immer gesetzt
 
 ## Layout-Muster
@@ -82,14 +82,14 @@ align-items: center;
 gap: 2rem;
 ```
 
-Float-Layout (verwendet auf about.html und pricing.html für Bild + mehrsektionigen Text):
+Float-Layout (verwendet auf about.html, services.html und pricing.html für Bild + mehrsektionigen Text):
 ```css
 float: right;
 width: 45%;
 margin: 0 0 var(--spacing-lg) var(--spacing-lg);
 ```
 
-Mobile Container-Logik fuer about.html und pricing.html:
+Mobile Container-Logik fuer about.html, services.html und pricing.html:
 ```css
 padding: 0 var(--spacing-lg);
 ```

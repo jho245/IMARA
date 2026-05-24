@@ -72,6 +72,19 @@
     margin: 0 0 var(--spacing-lg) 0 !important;
   }
 
+  .services-layout {
+    margin: 0 auto var(--spacing-lg) !important;
+    padding: 0 var(--spacing-lg) !important;
+  }
+
+  .services-float-img {
+    display: block !important;
+    float: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 0 var(--spacing-lg) 0 !important;
+  }
+
   /* Service-Grid: 1 Spalte */
   .services-grid {
     grid-template-columns: 1fr;

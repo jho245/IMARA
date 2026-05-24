@@ -157,12 +157,38 @@ h2 { font-size: var(--font-size-xl); margin-bottom: var(--spacing-md); }
   display: table;
 }
 
+.services-layout {
+  max-width: 1200px;
+  margin: 0 auto var(--spacing-lg);
+  padding: 0 var(--spacing-lg);
+}
+
+.services-layout::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
 .about-float-img {
   border-radius: 4px;
   float: right;
   margin: 0 0 var(--spacing-lg) var(--spacing-lg);
   max-width: 500px;
   width: 45%;
+}
+
+.services-float-img {
+  border-radius: 4px;
+  float: right;
+  margin: 0 0 var(--spacing-lg) var(--spacing-lg);
+  max-width: 360px;
+  width: 32%;
+}
+
+.services-content .services-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  max-width: none;
+  padding: 0;
 }
 
 .pricing-content::after {

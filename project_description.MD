@@ -46,7 +46,8 @@ IMARA_EPC/
 │   │   └── pictures/
 │   │       ├── bild_1.jpg          # Hero-Bild Startseite
 │   │       ├── bild_2.jpg          # Bild Über-uns-Seite
-│   │       ├── bild_3.jpg          # Weiteres Bild
+│   │       ├── bild_3.jpg          # Bild Preisseite
+│   │       ├── bild_4.jpg          # Bild Leistungsseite
 │   │       └── contact.jpg         # Bild Kontaktseite
 │   │
 │   └── texts/
@@ -129,6 +130,7 @@ IMARA_EPC/
 
 **Inhalte:**
 - Intro-Text
+- Bild (bild_4.jpg) als Desktop-Float rechts; Intro und Service-Karten laufen im selben Container am Bild vorbei. Auf Mobilgeräten haben Bild und Textcontainer die gleiche Breite.
 - 12 Service-Karten im Grid, je mit Titel, Kurztext und Modal-Beschreibung
 - Modal-Overlay: Klick auf den Button "Details ansehen" öffnet die Detailbeschreibung (services-modal.js)
 
