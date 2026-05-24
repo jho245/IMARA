@@ -67,13 +67,12 @@
   }
 
   .pricing-float-img {
+    display: block;
     float: none;
-    width: 100%;
-    max-width: 100%;
-    height: clamp(160px, 45vw, 220px);
-    object-fit: cover;
-    object-position: center;
-    margin: 0 0 var(--spacing-lg) 0;
+    width: 220px;
+    max-width: 72vw;
+    height: auto;
+    margin: 0 auto var(--spacing-lg);
   }
 
   /* Service-Grid: 1 Spalte */
