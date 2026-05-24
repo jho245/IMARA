@@ -70,6 +70,9 @@
     float: none;
     width: 100%;
     max-width: 100%;
+    height: clamp(160px, 45vw, 220px);
+    object-fit: cover;
+    object-position: center;
     margin: 0 0 var(--spacing-lg) 0;
   }
 
