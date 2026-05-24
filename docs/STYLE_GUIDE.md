@@ -1,4 +1,4 @@
-# Style Guide – IMARA Elite Property Care
+# Style Guide – IMARA Elite Property Care Düsseldorf UG (haftungsbeschränkt)
 
 ## Farben
 

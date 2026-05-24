@@ -1,6 +1,6 @@
-# IMARA Elite Property Care – Website
+# IMARA Elite Property Care Düsseldorf UG (haftungsbeschränkt) – Website
 
-Statische HTML/CSS/JS-Website für die Reinigungsfirma IMARA Elite Property Care, Düsseldorf.
+Statische HTML/CSS/JS-Website für die Reinigungsfirma IMARA Elite Property Care Düsseldorf UG (haftungsbeschränkt), Düsseldorf.
 
 ## Seiten
 
@@ -8,7 +8,7 @@ Statische HTML/CSS/JS-Website für die Reinigungsfirma IMARA Elite Property Care
 | ------------------ | ----------------------------------------------------------------- |
 | `index.html`       | Startseite – Hero, Leistungsüberblick, Vertrauenssignale, CTA     |
 | `about.html`       | Über uns – Geschichte, Werte, Dienstleistungen, Zitat             |
-| `services.html`    | Leistungen – 10 Service-Karten mit Kurztexten und Details         |
+| `services.html`    | Leistungen – 12 Service-Karten mit Kurztexten und Details         |
 | `pricing.html`     | Preise – Angebotsfaktoren, Einsatzgebiet und FAQ                  |
 | `contact.html`     | Kontakt – Adresse, Telefon, E-Mail, Bild                          |
 | `impressum.html`   | Impressum gemäß § 5 DDG                                           |

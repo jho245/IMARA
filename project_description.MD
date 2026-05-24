@@ -1,9 +1,9 @@
-# Projektdokumentation: IMARA Elite Property Care
+# Projektdokumentation: IMARA Elite Property Care Düsseldorf UG (haftungsbeschränkt)
 
 ## 1. Projektübersicht
 
-**Projekt:** Webpräsenz für IMARA Elite Property Care
-**Unternehmen:** IMARA Elite Property Care, gegründet 2024 von Imane Samini
+**Projekt:** Webpräsenz für IMARA Elite Property Care Düsseldorf UG (haftungsbeschränkt)
+**Unternehmen:** IMARA Elite Property Care Düsseldorf UG (haftungsbeschränkt), gegründet 2024 von Imane Samini
 **Standort:** Düsseldorf (Karl-Anton-Str. 17, 40211 Düsseldorf)
 **Domain:** [www.imara-epc.de](https://www.imara-epc.de)
 **Ziel:** Professionelle, benutzerfreundliche Website zur Kundengewinnung und Information
@@ -107,7 +107,7 @@ IMARA_EPC/
 - Unternehmensgeschichte (Gründung 2024, Imane Samini)
 - Unternehmenswerte (Zuverlässigkeit, Qualität, Respekt, Nachhaltigkeit, persönlicher Kontakt)
 - Warum-wir-Section (Alleinstellungsmerkmale)
-- Dienstleistungsübersicht (Liste aller 10 Leistungen)
+- Dienstleistungsübersicht (Liste aller 12 Leistungen)
 - Zitat von Imane Samini (CEO-Quote)
 
 **Seitenstruktur:**
@@ -128,26 +128,28 @@ IMARA_EPC/
 
 **Inhalte:**
 - Intro-Text
-- 10 Service-Karten im Grid, je mit Titel, Kurztext und Modal-Beschreibung
+- 12 Service-Karten im Grid, je mit Titel, Kurztext und Modal-Beschreibung
 - Modal-Overlay: Klick auf Karte öffnet Detailbeschreibung (services-modal.js)
 
-**Die 10 Leistungen:**
+**Die 12 Leistungen:**
 1. **Gewerbereinigung** – Verkaufsflächen, Lager, Kundenbereiche
 2. **Praxisreinigung** – Medizinische Einrichtungen, Desinfektion
 3. **Büroreinigung** – Arbeitsplätze, täglich oder wöchentlich
 4. **Grundreinigung** – Intensivreinigung, hartnäckige Verschmutzungen
 5. **Leerstandreinigung** – Übergabereinigung für Immobilien
 6. **Haushaltsreinigung** – Private Wohnräume nach individuellen Wünschen
-7. **Aufenthaltsreinigung** – Kantinen, Pausenräume, Umkleiden
-8. **Events-Reinigung** – Vor/nach Veranstaltungen
-9. **Sonderreinigung** – Spezialaufgaben mit speziellem Gerät
-10. **Objektbetreuung** – Gebäudemanagement, Haustechnik-Kontrolle
+7. **Ferienwohnung** – Reinigung zwischen Aufenthalten
+8. **Treppenhausreinigung** – Treppenhäuser, Eingangsbereiche und Gemeinschaftsflächen
+9. **Aufenthaltsreinigung** – Kantinen, Pausenräume, Umkleiden
+10. **Events-Reinigung** – Vor/nach Veranstaltungen
+11. **Sonderreinigung** – Spezialaufgaben mit speziellem Gerät
+12. **Objektbetreuung** – Gebäudemanagement, Haustechnik-Kontrolle
 
 **Seitenstruktur:**
 ```html
 <h1>Unsere Leistungen</h1>
 <p>                              <!-- Intro -->
-<section class="services-grid"> <!-- 10 service-card Divs mit Kurztexten und data-Attributen -->
+<section class="services-grid"> <!-- 12 service-card Divs mit Kurztexten und data-Attributen -->
 <div id="service-modal">        <!-- Modal-Overlay -->
 ```
 
@@ -168,7 +170,7 @@ IMARA_EPC/
 **Zweck:** Direkte Kommunikation mit dem Unternehmen
 
 **Kontaktdaten:**
-- Telefon: +49 176 70902249
+- Telefon: +49 152 26857715
 - E-Mail: info@imara-epc.de
 - Adresse: Karl-Anton-Str. 17, 40211 Düsseldorf
 - Öffnungszeiten: Mo–Fr, 08:00–18:00 Uhr
@@ -184,7 +186,7 @@ IMARA_EPC/
 **Zweck:** Rechtliche Anforderung (§ 5 DDG)
 
 **Erforderliche Inhalte:**
-- Vollständiger Name: IMARA Elite Property Care / Imane Samini
+- Vollständiger Name: IMARA Elite Property Care Düsseldorf UG (haftungsbeschränkt) / Imane Samini
 - Adresse: Karl-Anton-Str. 17, 40211 Düsseldorf
 - Telefon und E-Mail
 - Steuernummer / USt-ID
@@ -196,7 +198,7 @@ IMARA_EPC/
 **Zweck:** DSGVO-Compliance
 
 **Erforderliche Abschnitte:**
-- Verantwortlicher (IMARA Elite Property Care)
+- Verantwortlicher (IMARA Elite Property Care Düsseldorf UG (haftungsbeschränkt))
 - Zweck der Datenverarbeitung
 - Rechtsgrundlage
 - Speicherdauer
@@ -335,7 +337,7 @@ scp -r . user@host:/public_html/
 - [ ] Telefon- und E-Mail-Links getestet
 - [ ] Alle internen und externen Links funktionieren
 - [ ] 404-Seite vorhanden
-- [ ] Modal auf services.html getestet (alle 10 Karten)
+- [ ] Modal auf services.html getestet (alle 12 Karten)
 - [ ] Backup erstellt
 
 ### 6.2 Nach dem Launch
