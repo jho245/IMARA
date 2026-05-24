@@ -130,6 +130,36 @@ section ul, section ol {
 h1 { font-size: var(--font-size-2xl); margin-bottom: var(--spacing-md); }
 h2 { font-size: var(--font-size-xl); margin-bottom: var(--spacing-md); }
 
+.page-intro {
+  max-width: 1200px;
+  margin: 0 auto var(--spacing-lg);
+  padding: 0 var(--spacing-lg);
+}
+
+.contact-cta {
+  margin-top: var(--spacing-md);
+}
+
+.about-layout {
+  max-width: 1200px;
+  margin: var(--spacing-xl) auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.about-layout::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.about-float-img {
+  border-radius: 4px;
+  float: right;
+  margin: 0 0 var(--spacing-lg) var(--spacing-lg);
+  max-width: 500px;
+  width: 45%;
+}
+
 /* Service-Karten */
 .services-grid {
   display: grid;
